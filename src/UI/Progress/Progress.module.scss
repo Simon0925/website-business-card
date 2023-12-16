@@ -1,0 +1,51 @@
+
+.skills-bar-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.label-content{
+    display: flex;
+    width: 100%;
+    label{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: #5C5C6E;
+        font-size:13px;
+    }
+    span{
+        font-size:13px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: #5C5C6E;
+    }
+}
+
+ .progress-bar-B{
+    margin-top: 3px;
+    width: 100%; 
+    margin-bottom: 20px;
+ }
+ .progress-bar-M{
+    position:relative;
+    right: 0;
+    width: 100%;
+    background-color: #C0C0CA;
+    height: 3px;
+    
+ }
+ .progress-bar-S{
+    position: absolute;
+    left: 0;
+   
+    background-color: #0043f1;
+    height: 3px;
+    
+ }

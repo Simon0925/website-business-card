@@ -1,0 +1,25 @@
+
+.list-skill-wpap{
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 20px 0;
+   gap: 10px;
+   .list-skill{
+    font-size: 13px;
+    color: #5c5c6f;
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    
+   }
+  img{
+    width: 13px;
+  }
+   span{
+   width: 100%;
+   }
+}

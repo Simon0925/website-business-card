@@ -1,0 +1,28 @@
+
+.personal-data{
+    width: 100%;
+    min-width: 17dvw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #69697A;
+   
+    
+}
+.personal-data-item1{
+    text-align: left;
+    font-size: 20px;
+    width: 50%;    
+}
+.personal-data-item1 h6{
+    margin-top: 10px;
+}
+.personal-data-item2{
+    text-align: right;
+    font-size: 20px;
+    width: 50%;
+    
+}
+.personal-data-item2 h6{
+    margin-top: 10px;
+}

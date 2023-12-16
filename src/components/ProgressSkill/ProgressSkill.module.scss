@@ -1,0 +1,17 @@
+
+.circular-progress-wrap{
+   min-width: 100%; 
+   display: flex;
+
+}
+.circular-progress{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+    span{
+        color: #1e1e28;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
