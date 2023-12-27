@@ -21,7 +21,7 @@ export default function Progress ({
 			}, 25);
 		}
 	});
-
+	
 	const styleProgress = {
 		width:`${currentValue + '%'}`
 	};

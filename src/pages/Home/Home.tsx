@@ -1,24 +1,20 @@
-import styles from './Home.module.scss';
-import  WordPrint  from '../../UI/WordPrint/WordPrint';
-import Button from '../../UI/Button/Button';
+import Banner from '../../components/Banner/Banner';
 
-export function Home() {
+import Footer from '../../layout/Footer/Footer';
+import styles from './Home.module.scss';
+import History from '../../components/History/History';
+
+export  function Home() {
 	
 	return (
 		<>
-			<div className={styles['baner-wrap']}>
-				<div className={styles['baner-substrate']}></div>
-				
-				<div className={styles['baner-content-wrap']}>
-					<div className={styles['baner-text-content']} >
-						<p>Discover my Amazing</p>
-						<p>Art Space!</p>	
-					</div>
-					<WordPrint />
-					<Button children={'EXPLORE NOW'} />
-				</div>
+			<div className={styles['wrap']}>
+				<Banner />
+				<History />
+				<Footer/>
 				
 			</div>
+			
 		</>
 	);
 }

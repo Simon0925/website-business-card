@@ -1,0 +1,78 @@
+.baner-wrap{
+    width: 77dvw;
+    height: 40%;
+    background-color: #E0E0E5;
+    .baner-substrate{
+        width: 80%;
+        height: 50px;
+        background-color: white;
+    }
+    .baner-content-wrap {
+        width: 77vw;
+        height: 300px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; /* Прижимаем контент к верхнему краю */
+        gap: 10px;
+        background-image: url('../../public/banner.jpeg');
+ 
+    }
+   
+    img{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.baner-text-content{
+    color:#E0E0E5 ;
+    margin-top: 50px;
+    margin-left: 75px;
+    font-size: 42px;
+    font-weight: 900;
+    
+}
+
+.btn{
+    position: absolute;
+    margin-top: 14em;
+    margin-left: 5em;
+}
+
+@media only screen and (max-width:1200px){
+    .baner-wrap{
+        width: 98dvw;
+        .baner-content-wrap {
+        width: 98dvw;
+
+        }
+    }
+}
+
+@media only screen and (max-width:430px){
+    .baner-wrap{
+        
+        .baner-content-wrap {
+        width: 98dvw;
+        height: 400px;
+        
+        }
+    }
+
+    .btn{
+    margin-top: 20em;
+
+    }
+}
+
+@media only screen and (max-width:280px){
+    .baner-text-content{
+        font-size: 33px;
+        margin-left: 35px;
+    }
+    .btn{
+        margin-left: 3.5em;
+    }
+}

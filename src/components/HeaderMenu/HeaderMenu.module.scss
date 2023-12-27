@@ -1,0 +1,31 @@
+.header-menu-wrap{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background: #f4f4f6;
+    display: none;
+}
+.header-menu-dote{
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 53px;
+}
+.header-menu-dote-closed{
+    display: none;
+}
+.header-menu-burger{
+    right: 0;
+    position: fixed;
+    margin-right: 53px;
+}
+.header-menu-burger-closed{
+    display: none;
+}
+@media only screen and (max-width:1200px){
+    .header-menu-wrap{
+        display: block;
+    }
+}
+

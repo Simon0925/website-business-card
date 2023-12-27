@@ -2,18 +2,29 @@ import './App.css';
 import {InfoBar} from './layout/InfoBar/InfoBar';
 import { Header } from './layout/Header/Header';
 import { Main } from './layout/Main/Main';
-import { BrowserRouter } from 'react-router-dom';
 
+import { BurgerContext } from './context/burger.context';
+import { useState } from 'react';
+import HeaderMenu from './components/HeaderMenu/HeaderMenu';
+import { DoteContext } from './context/dote.context';
 
 
 function App() {
+	const [moveToLeft, setmoveToLeft] = useState(false);
+	const [moveToRigth, setMoveToRigth] = useState(false);
+
+
 	return (
-		<>
-			
-			<InfoBar />
-			<Header />
-			<Main />
-			<div id="modal-root"></div>			
+		<>	
+			<DoteContext.Provider value={{moveToRigth, setMoveToRigth}}>
+				<BurgerContext.Provider value={{moveToLeft, setmoveToLeft}}>
+					<HeaderMenu />
+					<InfoBar />	
+					<Header />
+					<Main />
+				</BurgerContext.Provider>
+			</DoteContext.Provider>
+			<div id="modal-root"></div>
 		</>
 	);
 }

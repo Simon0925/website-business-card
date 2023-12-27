@@ -14,3 +14,10 @@
 .code{
     color:  #569CD6;
 }
+
+@media only screen and (max-width:280px){
+    .baner-content{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}

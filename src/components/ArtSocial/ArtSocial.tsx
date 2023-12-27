@@ -1,6 +1,6 @@
 import styles from './Artsocial.module.scss';
 
-export function ArtSocial () {
+export default function ArtSocial () {
 	return(
 		<>
 			<div className={styles['art-social']}>

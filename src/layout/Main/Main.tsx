@@ -1,22 +1,38 @@
-
 import styles from './Main.module.scss';
 import { Home } from '../../pages/Home/Home';
 import { Contact } from '../../pages/Contact/Contact';
-import {Resume} from '../../pages/Resume/Resume';
-import { Error } from '../../pages/Error/Error'; 
-import {Services} from '../../pages/Services/Services';
-import {Works} from '../../pages/Works/Works';
-import {  Routes, Route,  Outlet } from 'react-router-dom';
+import { Resume } from '../../pages/Resume/Resume';
+import { Error } from '../../pages/Error/Error';
+import { Services } from '../../pages/Services/Services';
+import { Works } from '../../pages/Works/Works';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import { useContext } from 'react';
+import { useState,useEffect } from 'react';
 
 
+import { BurgerContext } from '../../context/burger.context';
 
+import {DoteContext} from '../../context/dote.context';
 
-
-export function Main ()  {
-	return(
+export function Main() {
+	const { moveToLeft } = useContext(BurgerContext);
+	const { moveToRigth } = useContext(DoteContext);
+	const [display, setDisplay] = useState(moveToLeft);
+  
+	useEffect(() => {
+		setDisplay(moveToLeft);
+		
+	}, [moveToLeft]);
+	useEffect(() => {
+		setDisplay(moveToRigth);
+	
+	}, [moveToRigth]);
+	
+	return (
 		<>
-			<main className={styles['main']}>
-				
+			<div className={`${styles['clouse']} ${display ? styles['open'] : ''}`} ></div>
+			<main  className={styles['main']}>
+			
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path="/contact" element={<Contact />} />
@@ -27,7 +43,7 @@ export function Main ()  {
 				</Routes>
 				<Outlet />
 			</main>
-           
+		
 			
 		</>
 	);

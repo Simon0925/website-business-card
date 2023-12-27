@@ -1,0 +1,48 @@
+{
+    "education":[{
+        "id":"1",
+        "name":"University of Toronto",
+        "role":"student",
+        "date":"jan 2018 - may 2020" ,
+        "confirmation": "DIPLOMA",
+        "description":"Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri"
+
+    },
+    {
+        "id":"2",
+        "name":"Programming Course",
+        "role":"student",
+        "date":"jan 2016- apr 2017" ,
+        "confirmation": "",
+        "description":"Coursework - Git, WordPress, Javascript, iOS, Android"
+
+    },
+    {
+        "id":"3",
+        "name":"Web developer courses",
+        "role":"student",
+        "date":"aug 2014 - oct 2015" ,
+        "confirmation": "LICENCE",
+        "description":"Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript"
+
+    }
+],
+"workHistory":[{
+    "id":"1",
+    "name":"Envato",
+    "role":"Template Author",
+    "date":"jan 2018 - may 2020" ,
+    "confirmation": "",
+    "description":"Created Professional WordPress Themes & Templates for Personal and Creative Websites."
+},
+{
+    "id":"2",
+    "name":"ABC Studio",
+    "role":"Front-End Developer",
+    "date":"apr 2018 - aug 2019" ,
+    "confirmation": "RECOMMENDATION",
+    "description":"Collaborate with creative and development teams on the execution of ideas."
+}
+
+]
+}

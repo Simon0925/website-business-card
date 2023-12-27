@@ -1,11 +1,49 @@
 main{
-    background-color: #F4F4F6;
+    // background-color: #F4F4F6;
     width: 77dvw;
-    height: 83.5%;
+    height: 85%;
     right: 10px;
     margin-top: 110px;
     margin-right: 10px;
     margin-left: auto;
     position: fixed;
-    overflow: hidden;
+    overflow: scroll;
+    // bottom: 0;
+    overflow-x: hidden;
   }
+  main::-webkit-scrollbar{
+    width: 0;
+  }
+  @media only screen and (max-width:1200px){
+    .main{
+      height: 91%;
+      margin-top: 60px;
+      width: 98dvw;
+      margin-right: 0%;
+
+    }
+}
+
+
+
+.clouse{
+  
+  
+  
+  
+}
+.open{
+  width: 100dvw; 
+  height: 92%;
+  z-index: 2; 
+  position: fixed;
+  top: 71px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  
+  transition: right .5s, left .5s;
+
+}
+
