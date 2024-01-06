@@ -1,5 +1,5 @@
 .header-menu-wrap{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -16,8 +16,9 @@
     display: none;
 }
 .header-menu-burger{
+    top:10px;
     right: 0;
-    position: fixed;
+    position: absolute;
     margin-right: 53px;
 }
 .header-menu-burger-closed{
@@ -26,6 +27,11 @@
 @media only screen and (max-width:1200px){
     .header-menu-wrap{
         display: block;
+    }
+    .header-menu-dote{
+        margin-top: 23px;
+        position: absolute;
+        margin-left: 53px;
     }
 }
 

@@ -1,8 +1,9 @@
 
 .scroll-bar{
-    height: 67%;
+    height: calc(100vh - 34vh);
+    min-height: auto;
     background-color: #F4F4F6;
-    overflow:scroll;
+    overflow: scroll;
     padding-bottom: 30px;
 }
 .scroll-bar::-webkit-scrollbar{
@@ -12,46 +13,36 @@
      display: none;
 }
 
-.skills-bar-wrap{
-    min-height: 150px ;
-    border-bottom: 3px solid #D4D4D7;
-    min-width: 17dvw; 
-    
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    margin-top:20px;
-    flex-direction: column;
-
-}
-@media screen and (max-width: 915px){
-    .scroll-bar{
-    height: 65%;
+@media screen and (max-width: 540px) {
+    .scroll-bar {
+        height: 64.5vh;
     }
 }
-@media screen and (max-width: 740px){
-    .scroll-bar{
-    height: 59%;
-
+@media screen and (max-width: 430px) {
+    .scroll-bar {
+        height: 69vh;
+    }
+}
+@media screen and (max-width: 390px) {
+    .scroll-bar {
+        height: 68.5vh;
     }
 }
 
-@media screen and (max-height: 935px){
-    .scroll-bar{
-    height: 66%;
-
+@media screen and (max-width: 375px) {
+    .scroll-bar {
+        height: 62vh;
+    }
+}
+@media screen and (max-width: 360px) {
+    .scroll-bar {
+        height: 65vh;
     }
 }
 
-@media screen and (max-height: 740px){
-    .scroll-bar{
-    height: 64%;
-
+@media screen and (max-width: 280px) {
+    .scroll-bar {
+        height: 61vh;
     }
 }
-@media screen and (max-height: 667px){
-    .scroll-bar{
-    height: 58%;
 
-    }
-}

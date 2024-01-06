@@ -1,6 +1,5 @@
 
 .box-content {		
-    // width: calc(100% - 20px);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -8,7 +7,7 @@
 .content-block01 {
     width: 45%;
     position: relative;
-    margin-left: 0em;
+    margin-left: 1em;
 }
 .content-block02 {
     width: 45%;
@@ -49,5 +48,15 @@
     .content-block02{
         width: 70%;
         margin-right: 18%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .content-block01{
+        width: 70%;
+        margin-left: 0;
+    }
+    .content-block02{
+        width: 70%;
+        margin-right: 80px;
     }
 }

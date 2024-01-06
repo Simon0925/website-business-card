@@ -1,0 +1,258 @@
+
+.contact-form-wrap{
+    
+    background: linear-gradient(159deg,rgba(255,255,255,1) 0%,rgba(255,255,255,.95) 100%);
+    padding: 30px;
+    margin: 30px 15px;
+    box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+    
+    .contact-form{
+        font-size: 13px;
+        line-height: 1.7;
+        form{
+            display: flex;
+            flex-direction: column;
+             
+             gap:20px;
+                .form-group{
+                    position: relative;
+                    width: 100%;
+                    
+                }
+                .label-not-activ{
+                    width: 50px;
+                    height: 52px;
+                    // background-color: red;
+                    top: 0px;
+                    left: 0px;
+                    position: absolute;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #5c5c6f;
+                    cursor: text;
+                }
+
+                .label-activ{
+                    width: 50px;
+                    height: 52px;
+                    background-color: #0043f1;
+                    
+                    top: 0px;
+                    left: 0px;
+                    position: absolute;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #5c5c6f;
+                    cursor: text;
+                }
+                .label-error{
+                    background-color: red;
+                }
+
+             label{
+                width: 50px;
+                height: 52px;
+                // background-color: red;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                font-size: 24px;
+                font-weight: 500;
+                color: #5c5c6f;
+                cursor: text;
+               .labe-iconl-not-activ{
+                    position: absolute;
+                    top: 5px;
+                    left: 12px;
+                    font-size: 26px;
+               }
+               .label-icon-activ{
+                color: white;
+               }
+                span{
+                    position: absolute;
+                    top: 5px;
+                    left: 13.5px;
+                    font-size: 26px;
+                }
+             }
+             input{
+                display: flex;
+                margin-left: 0;
+                outline: none;
+                padding-left: 65px;
+                background: #f4f4f6;
+                height: 50px;
+                width: 94.4%;
+                border: none;
+                box-shadow: inset 0 1px 4px 0 rgba(15,15,20,.1);
+               
+              
+             }
+             
+             textarea{
+                outline: none;
+                border: none;
+                background: #f4f4f6;
+                padding-left: 15px;
+                padding-top: 15px;
+                height: 150px;
+                border-left: solid 50px #F4F4F6;
+                width: 94.4%;
+                box-shadow: inset 0 1px 4px 0 rgba(15,15,20,.1);
+             }
+             .error-massage{
+                width: 100%;
+                font-size: 16px;
+                color: red;
+                font-weight: 900;
+                font-family: "Poppins",sans-serif;
+             }
+             .message-textarea-not-activ{
+                width: 50px;
+                height: 167px;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                font-size: 24px;
+                font-weight: 500;
+                color: #5c5c6f;
+                cursor: text;
+             }
+             .message-textarea-activ{
+                width: 50px;
+                height: 167px;
+                background-color: #0043f1;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                font-size: 24px;
+                font-weight: 500;
+                color: #5c5c6f;
+                cursor: text;
+             }
+        }
+
+        .btn{
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 912px) {
+    .contact-form-wrap{
+        margin: 30px 0px;
+        .contact-form{
+            form{
+                input{
+                    width:92%;
+                }
+                textarea{
+                    width:92%
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-form-wrap{
+        
+        .contact-form{
+            form{
+                input{
+                    width:90%;
+                }
+                textarea{
+                    width:90%
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .contact-form-wrap{
+        margin: 30px 0px;
+        .contact-form{
+            form{
+                input{
+                    width:84.5%;
+                }
+                textarea{
+                    width: 85%
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-form-wrap{
+        margin: 30px 0px;
+        .contact-form{
+            form{
+                input{
+                    width:79%;
+                }
+                textarea{
+                    width:79%
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .contact-form-wrap{
+        margin: 30px 0px;
+        .contact-form{
+            form{
+                input{
+                    width:76%;
+                }
+                textarea{
+                    width:76%
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .contact-form-wrap{
+        margin: 30px 0px;
+        .contact-form{
+            form{
+                input{
+                    width:73%;
+                }
+                textarea{
+                    width:73%
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 280px) {
+    .contact-form-wrap{
+        margin: 30px 0px;
+        .contact-form{
+            form{
+                input{
+                    width:62%;
+                }
+                textarea{
+                    width:62%
+                }
+            }
+        }
+    }
+}

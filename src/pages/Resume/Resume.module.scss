@@ -1,0 +1,136 @@
+.cv-wrap{
+    box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+    width: 100%;
+    background-color:#EBEBF0;
+    display: flex ;
+    padding: 20px;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+    .skills-block{
+        
+        flex: 1;
+
+        @media only screen and (min-width: 768px) {
+            flex: 1.2;
+        }
+        background-color:#0043f1 ;
+        .about-me{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            p{
+                padding-top: 20px;
+                color: white;
+            }
+        }
+        h2{
+            width: 100%;
+            font-weight: 400;
+            color: white;
+            font-family: sans-serif;
+        }
+        ul{
+            padding-top: 20px;
+            padding-left: 1em;
+            color: white;
+            width: 100%;
+        }
+        .skills{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+           
+        }
+    }
+    .personal-data-block{
+        
+        background-color: white;
+        margin-right: 40px;
+        padding: 40px;
+        flex: 1;
+
+        @media only screen and (min-width: 768px) {
+            flex: 3;
+        }
+        h1{
+            font-size: 32pt;
+            color: #444440;
+            font-family: sans-serif;
+        }
+        h2{
+            padding-top: 20px;
+            font-size: 14.6pt;
+            color: #444440;
+            font-family: sans-serif;
+        }
+        .contact-data{
+            padding-top: 20px;
+            color: #444440;
+            span{
+                display: flex;
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @media only screen and (min-width: 768px) {
+                    width: auto;
+                }
+                a{
+                    text-decoration: none;
+                    color: #444440;
+                    width: 100%;
+                    padding-left: 20px;
+                }
+                img{
+                    width: 20px;
+                }
+            }
+            
+        }
+
+        .work-experiences{
+            .experience{
+                color: #0043f1;
+                font-size: 11.7pt;
+            }
+            .name-of-job{
+                color: #444440;
+                margin-top: 20px;
+
+            }
+            .works-block{
+                color: #444440;
+                font-size: 9.7pt;
+                margin-top: 20px;
+            }
+            .works-block-description{
+                margin-top: 20px;
+                color: #444440;
+            }
+        }        
+       
+    }
+    
+}
+
+@media only screen and (max-width:430px){
+    .cv-wrap{
+        padding: 0;
+        .personal-data-block{
+            margin-right: 0;
+           h1{
+            font-size: 28pt;
+           }
+            .work-experiences{
+                .works-block{
+                    font-size: 9.7pt;
+                }
+            }
+        }
+    }
+    
+}
+
+

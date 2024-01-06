@@ -17,7 +17,7 @@ export function NavBar ({rotated}:NavBarProps)  {
 				<NavLink  className={({isActive})=>isActive ? styles['active-link']:styles['nav-bar-link']} to={'/contact'} >CONTACT</NavLink>
 				<NavLink  className={({isActive})=>isActive ? styles['active-link']:styles['nav-bar-link']} to={'/resume'} >RESUME</NavLink>
 				<NavLink  className={({isActive})=>isActive ? styles['active-link']:styles['nav-bar-link']} to={'/services'} >SERVICES</NavLink>
-				<NavLink  className={({isActive})=>isActive ? styles['active-link']:styles['nav-bar-link']} to={'/works'} >WORK</NavLink>
+				<NavLink  className={({isActive})=>isActive ? styles['active-link']:styles['nav-bar-link']} to={'/portfolio'} >PORTFOLIO</NavLink>
 			</nav>
 		</>
 	);

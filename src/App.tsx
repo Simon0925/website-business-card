@@ -7,6 +7,7 @@ import { BurgerContext } from './context/burger.context';
 import { useState } from 'react';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import { DoteContext } from './context/dote.context';
+import RightSide from './layout/RightSide/RightSide';
 
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
 		<>	
 			<DoteContext.Provider value={{moveToRigth, setMoveToRigth}}>
 				<BurgerContext.Provider value={{moveToLeft, setmoveToLeft}}>
-					<HeaderMenu />
+					{/* <HeaderMenu /> */}
 					<InfoBar />	
-					<Header />
-					<Main />
+					<RightSide />
+					{/* <Header />
+					<Main /> */}
 				</BurgerContext.Provider>
 			</DoteContext.Provider>
 			<div id="modal-root"></div>

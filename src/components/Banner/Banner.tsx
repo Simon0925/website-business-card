@@ -5,7 +5,6 @@ import styles from './Banner.module.scss';
 export default function Bunner (){
 	return<>
 		<div className={styles['baner-wrap']}>
-			<div className={styles['baner-substrate']}></div>
 			<div className={styles['baner-content-wrap']}>
 				<div className={styles['baner-text-content']} >
 					<p>Discover my Amazing</p>

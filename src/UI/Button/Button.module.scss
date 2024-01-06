@@ -1,5 +1,5 @@
 .baner-button{
-  
+    transition: all 1s;
     margin-right: auto;
     height: 45px;
     font-size: 12px;
@@ -9,12 +9,11 @@
     border: none;
     color: #E0E0E5;
     cursor: pointer;
- 
 }
     
 
 .baner-button:hover{
-    margin-top: 10px;
+    margin-left: 10px;
     transition: 1s ease-in-out;
     -webkit-transition: 1s ease-in-out;
 

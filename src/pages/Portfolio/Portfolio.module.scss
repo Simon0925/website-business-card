@@ -1,0 +1,177 @@
+.portfolio-page {
+    min-height: calc(100vh - 21vh); 
+    background-color: #F0F0F5;
+    box-sizing: border-box;
+ 
+
+    h4 {
+        color: #1e1e28;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        word-wrap: break-word;
+        line-height: 1.2;
+        padding: 40px;
+    }
+
+    .portfolio-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+
+        .portfolio-container {
+            box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+            background-image: url('../../public/404.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            overflow:hidden;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 500px;
+            height: 415.7px;
+            background-color: red;
+            transition: all 1s;
+            .portfolio-ditails{
+                position: relative;
+                top: 127px;
+                height: 125px;
+                width: 500px;
+                background-color: white;
+                transition: 1s ease-in-out;
+                display: flex;
+                flex-direction: column;
+             
+                h5{
+                    margin: 20px;
+                    color: #1e1e28;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: "Poppins",sans-serif;
+                }
+                p{
+                    margin: 0 20px;
+                }
+                a{
+                    margin: 20px;
+                    gap:10px;
+                    text-decoration: none;
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
+                    font-weight: 600;   
+                    color: #0043f1;
+                    cursor: pointer;
+                    span{
+                        font-size: 16px;
+                        transition: all 1s;
+                        padding-right: 0;
+                       
+                    }
+                
+                    &:hover span{
+                        padding-left: 1em;
+                        transition: 1s ease-in-out;
+                    }
+                }
+                
+            }
+            &:hover .portfolio-ditails{
+                
+                top:0;
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width:540px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 385.7px;
+                width: 464px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:430px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 340.6px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:414px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 330px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:390px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 317px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 300px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+   
+  }
+
+@media only screen and (max-width:360px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 293px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+   
+  }
+
+
+@media only screen and (max-width:280px){
+    .portfolio-page{
+        .portfolio-wrap {
+            padding: 0px;
+            .portfolio-container{
+                height: 200px;
+                margin-right: 28px;
+                width: 240px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+   
+  }
