@@ -1,55 +1,59 @@
+import { useEffect, useState } from 'react';
 import Footer from '../../layout/Footer/Footer';
 import styles from './Services.module.scss';
+import ErrorMassage from '../../components/ErrorMessage/ErrorMessage';
+import Spiner from '../../UI/Spiner/spiner';
+
+
+interface serviceInterface{
+	a:string,
+	h5:string,
+	href:string,
+	p:string
+}
 
 export default function Services() {
+
+	const [data, setData] = useState<serviceInterface[]>([]);
+	const [isLoading, setIsLoading] = useState(false);
+	const [error, setError] = useState<string | undefined>();
+
+	async function getData(){
+		try{
+			setIsLoading(true);
+			const response = await fetch('http://localhost:5045/api/services');
+			const data = await response.json();
+			console.log(data);
+			setData(data);
+			setIsLoading(false);
+		}catch(error){
+			console.error(error);
+			setIsLoading(false);
+			setError(String(error));
+			return;
+		}
+	}
+
+	useEffect(() => {
+		getData();
+	}, []);
+	
+
 	return <>
 		<div className={styles['my-services-wrap']}>
 			<h4>My Services</h4>
 			<div className={styles['my-services']}>
-				<div className={styles['my-service-block']}>
-					<div className={styles['my-service-content']} >
-						<h5>Web Development</h5>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Delectus esse commodi deserunt vitae, vero quasi! 
-						Veniam quaerat tenetur pariatur doloribus.
-						</p>
-						<a href='http://localhost:5173/contact' >ORDER NOW<span>{' >'}</span></a>
+				{error &&<ErrorMassage /> }
+				{data.map((element, index) => (
+					<div key={index} className={styles['my-service-block']}>
+						<div className={styles['my-service-content']}>
+							<h5>{element.h5}</h5>
+							<p>{element.p}</p>
+							<a href={element.href}>ORDER NOW<span>{' >'}</span></a>
+						</div>
 					</div>
-				</div>
-				<div className={styles['my-service-block']}>
-					<div className={styles['my-service-content']} >
-						<h5>Web Development</h5>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Delectus esse commodi deserunt vitae, vero quasi! 
-						Veniam quaerat tenetur pariatur doloribus.
-						</p>
-						<a href='http://localhost:5173/contact' >ORDER NOW<span>{' >'}</span></a>
-					</div>
-				</div>
-				<div className={styles['my-service-block']}>
-					<div className={styles['my-service-content']} >
-						<h5>Web Development</h5>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Delectus esse commodi deserunt vitae, vero quasi! 
-						Veniam quaerat tenetur pariatur doloribus.
-						</p>
-						<a href='http://localhost:5173/contact' >ORDER NOW<span>{' >'}</span></a>
-					</div>
-				</div>
-				<div className={styles['my-service-block']}>
-					<div className={styles['my-service-content']} >
-						<h5>Web Development</h5>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Delectus esse commodi deserunt vitae, vero quasi! 
-						Veniam quaerat tenetur pariatur doloribus.
-						</p>
-						<a href='http://localhost:5173/contact'  >ORDER NOW<span>{' >'}</span></a>
-					</div>
-				</div>
+				))}
+				{isLoading && <Spiner />}
 			</div>
 		</div>
 		<Footer />

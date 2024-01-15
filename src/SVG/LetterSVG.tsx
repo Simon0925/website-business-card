@@ -1,13 +1,16 @@
 interface LetterSVGProps {
-    isSelected:boolean
+    isSelected:boolean,
+	isValid: boolean
 }
 
 
 
-export default function LetterSVG({isSelected}:LetterSVGProps){
+export default function LetterSVG({isSelected,isValid}:LetterSVGProps){
+	const fillColor = isSelected ? 'white' : (isValid ?'#5C5C6E'  : 'white');
+
 	return(
 		<>
-			<svg fill={isSelected ? 'white' : '#5C5C6E' }width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+			<svg fill={fillColor}width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 				<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 				<g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
 				<g id="SVGRepo_iconCarrier"> <title></title> <g data-name="Layer 2" id="Layer_2"> 

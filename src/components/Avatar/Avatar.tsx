@@ -1,7 +1,7 @@
 import styles from './Avatar.module.scss';
 import PointFlicker from '../../UI/PointFlicker/PointFlicker';
 import ModalWindow from '../ModalWindow/ModalWindow';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import ReactDOM from 'react-dom';
 import { useDoteContext } from '../../context/dote.context';
@@ -9,9 +9,11 @@ import { useDoteContext } from '../../context/dote.context';
 
 export function Avatar ()  {
 	const [openModal,setOpenModal] = useState(false);
+
+	const config = useMemo(() => styles['point'], []);
 	
-	const config:string = styles['point'];
 	var modalRoot = document.getElementById('modal-root');
+	
 
 	const {setMoveToRigth } = useDoteContext();
 
@@ -40,7 +42,7 @@ export function Avatar ()  {
 			{
 				openModal && modalRoot &&
 				ReactDOM.createPortal(
-					<ModalWindow photo='../../public/avatar/avatr.jpg' clouseModal={setOpenModal}/>,
+					<ModalWindow photo='../../public/avatar/avatr.jpg' closeModal={()=>setOpenModal(false)}/>,
 					modalRoot)
 			}
 		</div>

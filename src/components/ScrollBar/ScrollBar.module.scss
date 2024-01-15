@@ -15,34 +15,49 @@
 
 @media screen and (max-width: 540px) {
     .scroll-bar {
-        height: 64.5vh;
+        height: 62.5vh;
     }
 }
 @media screen and (max-width: 430px) {
     .scroll-bar {
-        height: 69vh;
+        height: 68vh;
     }
 }
 @media screen and (max-width: 390px) {
     .scroll-bar {
-        height: 68.5vh;
+        height: 67.5vh;
     }
 }
 
 @media screen and (max-width: 375px) {
     .scroll-bar {
-        height: 62vh;
+        height: 60vh;
     }
 }
 @media screen and (max-width: 360px) {
     .scroll-bar {
-        height: 65vh;
+        height: 64vh;
     }
 }
 
 @media screen and (max-width: 280px) {
     .scroll-bar {
-        height: 61vh;
+        height: 59vh;
     }
 }
 
+@media only screen and (max-height:600px){
+    .scroll-bar {
+        height: calc(100vh - 70vh);
+    }
+}
+@media only screen and (max-height:540px){
+    .scroll-bar {
+        height: calc(100vh - 50vh);
+    }
+}
+@media only screen and (max-height:280px){
+    .scroll-bar {
+        height: calc(100vh - 95vh);
+    }
+}

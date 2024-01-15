@@ -1,177 +1,208 @@
+import { useEffect, useState } from 'react';
 import Footer from '../../layout/Footer/Footer';
 import style from './Resume.module.scss';
+import resumeData from './interface';
+import ErrorMassage from '../../components/ErrorMessage/ErrorMessage';
+import Spiner from '../../UI/Spiner/spiner';
 
 
 export function Resume() {
+
+	const [isLoading, setIsLoading] = useState(false);
+	const [error, setError] = useState<string | undefined>();
+
+	const [data, setData] = useState<resumeData>({
+		resume:{
+			leftSide:{
+				aboutMe:{
+					text:'',
+					title:''
+				},
+				hardSkills:{
+					skills:[],
+					title:''
+				},
+				languages:{
+					languagesData:[],
+					title:''
+				},
+				softSkills:{
+					skills:[],
+					title:''
+				}
+
+			},
+			rightSide:{
+				educationAndTraining:[],
+				headerData:{
+					contactData:[],
+					name:'',
+					speciality:'',
+					surname:''
+				},
+				hobbiesAndInterests:'',
+				workExperiences:[]
+			}
+		}
+	});
+
+
+	
+	
+	
+	async function getData() {
+		try {
+			setIsLoading(true);
+			const response = await fetch('http://localhost:5045/api/resume');
+			const result = await response.json();
+			const data = result.resumeData[0];
+			setData(data);
+			setIsLoading(true);
+		} catch (error) {
+			console.error(error);
+			setIsLoading(false);
+			setError(String(error));
+			return;
+		}
+	}
+	useEffect(() => {
+		getData();
+		
+	},[]);
+	
+
+	const hardSK = data.resume.leftSide.hardSkills.skills;
+
+	const softSK = data.resume.leftSide.softSkills.skills;
+
+	const language = data.resume.leftSide.languages.languagesData;
+
+	const contact = data.resume.rightSide.headerData.contactData;
+
+	const workExperiences = data.resume.rightSide.workExperiences;
+
+	const education = data.resume.rightSide.educationAndTraining;
+
+	const hobbi = data.resume.rightSide.hobbiesAndInterests;
+	
+	
 	return <>
 		<div className={style['cv-wrap']}>
+
+			{error &&<ErrorMassage /> }
+			
 			<div className={style['skills-block']}>
 				<div className={style['about-me']}>
-					<h2>ABOUT ME</h2>
-					<p>
-						I'm looking for a job where I
-						can apply the acquired knowledge 
-						and practical experience on large and 
-						interesting projects, and also continue to 
-						learn and develop myself.
-						Currently, I have experience implementing 
-						complex web applications and 
-						internal frameworks using React , Node JS .
-					</p>
+					<h2>{data.resume.leftSide.aboutMe.title}</h2>
+					<p>{data.resume.leftSide.aboutMe.text}</p>
 				</div>
 				<div className={style['skills']}>
-					<h2>HARD SKILLS</h2>
+					<h2>{data.resume.leftSide.hardSkills.title}</h2>
 					<ul>
-						<li>JavaScript</li>
-						<li>TypeScript</li>
-						<li>React</li>
-						<li>Redux / Redux - Saga</li>
-						<li>Next.js</li>
-						<li>Styled components</li>
-						<li>HTML5</li>
-						<li>CSS3 / SASS</li>
-						<li>WebPack / Gulp</li>
-						<li>GIT</li>
-						<li>Node js</li>
-						<li>Figma</li>
+						{hardSK.map((elem, index) => (
+							<li key={index}>{elem}</li>
+						))}
 					</ul>
 				</div>
 				<div className={style['skills']}>
-					<h2>SOFT SKILLS</h2>
+					<h2>{data.resume.leftSide.softSkills.title}</h2>
 					<ul>
-						<li>Communication</li>
-						<li>Critical thinking</li>
-						<li>Adaptability</li>
-						<li>Collaboration</li>
-						<li>Emotional intelligence</li>
+						{softSK.map((elem, index) => (
+							<li key={index}>{elem}</li>
+						))}
 					</ul>	
 				</div>
 				<div className={style['skills']}>
-					<h2>LANGUAGES</h2>
+					<h2>{data.resume.leftSide.languages.title}</h2>
 					<ul>
-						<li>English: Intermediate</li>
-						<li>Ukrainian: Native</li>
-						<li>Russian: Mastery</li>
+						{language.map((elem, index) => (
+							<li key={index}>{elem.language}</li>
+						))}
 					</ul>	
 				</div>
 
 			</div>
-			<div className={style['personal-data-block']} >
-				<h1>Yakovenko</h1>
-				<h1>Semen</h1>
-				<h2>FRONT-END DEVELOPER</h2>
+			
+
+			 <div className={style['personal-data-block']} >
+				<h1>{data.resume.rightSide.headerData.surname}</h1>
+				<h1>{data.resume.rightSide.headerData.name}</h1>
+				<h2>{data.resume.rightSide.headerData.speciality}</h2>
 				<div className={style['contact-data']}>
-					<span>
-						<img src='../../public/telephone.png' alt='telephone' />	
-						<a href='+780771142653'>+78 (077) 114 26 53</a>
-					</span>
-					<span>
-						<img src='../../public/gmail.svg' alt='gmail' />
-						<a href='sam0925g@gmail.com' >sam0925g@gmail.com</a>
-					</span>
-					<span>
-						<img src='../../public/telegram.svg' alt='telegram' />
-						<a href='@the_bear0_0'>@the_bear0_0</a>
-					</span>
-					<span>
-						<img src='../../public/linkedin.png' alt='linkedin' />
-						<a href='https://www.linkedin.com/in/semen-yakovenko-585941186/'>semen-yakovenko</a>
-					</span>
-					<span>
-						<img src='../../public/git.png' alt='git' />
-						<a href='Simon0925'>Simon0925</a>
-					</span>
 					
+					{isLoading && contact.map((elem, index) => (
+						<span key={index}>
+							<img src={elem.imgSrc} alt={elem.alt} />	
+							<a href={elem.link}>{elem.element}</a>
+						</span>
+						
+					))}
+					
+					{!isLoading && <Spiner />}
+
 				</div>
 				<div className={style['work-experiences']}>
 					<h3 className={style['experience']}>WORK EXPERIENCES</h3>
 
 					<div className={style['works-block']} >
-						<h3 className={style['name-of-job']}>2022 to 2023 - Freelancing via Young Ones Amsterdam:</h3>
+						<h3 className={style['name-of-job']}>{workExperiences[0]?.title}</h3>
 						<div className={style['works-block-description']}>
-							<p>
-								<p>-Bartender - Panama Club, Amsterdam:</p>
-							Maintaining high standards of service and health & safety and helping to deliver best service to customers.
+							<span>
+								<p>{workExperiences[0]?.roles[0].role}</p>
+								<p>{workExperiences[0]?.roles[0].p}</p>
 								<ul>
-									<li>
-									All aspects of customer service.
-									</li>
-									<li>
-								Mixing drinks, taking orders and ensuring customers are served quickly.
-									</li>
-									<li>
-								Running the bar in line with health, safety and legal regulations.
-									</li>
+									{workExperiences[0]?.roles[0].responsibilities?.map((elem, index) => (
+										<li key={index}>
+											{elem}
+										</li>
+									))}
 								</ul>
-							-Waiter – DeVerbroederlJ / Cafe Restaurant Stork, Amsterdam
+								<p>{workExperiences[0]?.roles[1].role}</p>
 								<ul>
-									<li>
-									Greeting customers on arrival and taking food and drink orders
-									</li>
-									<li>
-									Swiftly resolving any conflicts or issues 
-									</li>
-									<li>
-									Working as part of a team
-									</li>
-									<li>
-									Handling hot food and serving to the customers 
-									</li>
+									{workExperiences[0]?.roles[1].responsibilities?.map((elem, index) => (
+										<li key={index}>
+											{elem}
+										</li>
+									))}
 								</ul>
-								Store Consultant - G-Star Store
-							</p>
+								<p>{workExperiences[0]?.roles[2].role}</p>
+							</span>
 						</div>
-						<h3 className={style['name-of-job']}>2021 to 2022 - Freight Broker at Land Star Ukraine</h3>
+						{workExperiences[1] && (
+							<h3 className={style['name-of-job']}>{workExperiences[1].title}</h3>
+						)}
 						<div className={style['works-block-description']}>
 							<ul>
-								<li>
-								Managing freight bookings using a computerised system. 
-								</li>
-								<li>
-								Checking that tax and customs documents are correct and completed in full
-								</li>
-								<li>
-								Working with national and international suppliers and agents. 
-								</li>
-								<li>
-								Arranging freight deliveries and collections between ports, airports, and warehouses. 
-								</li>
-								<li>
-								Handling invoices and payments. 
-								</li>
-								<li>
-								Keeping clients up to date and deal with problems or delays.
-								</li>
+								{workExperiences[1]?.responsibilities.map((elem, index) => (
+									<li key={index}>
+										{elem}
+									</li>
+								))}
 							</ul>
 						</div>
-						<h3 className={style['name-of-job']}>2020 to 2021 - Digital Marketing - Ukraine</h3>
+						<h3 className={style['name-of-job']}>{workExperiences[2]?.title}</h3>
 						<div className={style['works-block-description']}>
 
-							<p>Taking a lead in maintaining and developing a site. </p>
+							<p>{workExperiences[2]?.p} </p>
 							<ul>
-								<li>
-							Attending meetings with clients to plan and develop website styles and appearance. 
-								</li>
-								<li>
-							Using content management systems (CMS). 
-								</li>
-								<li>
-							Analysing statistics about who is using the website and writing reports for managers and clients
-								</li>
-								<li>
-							Reporting technical problems to IT support staff as needed
-								</li>
+								{workExperiences[2]?.responsibilities.map((elem, index) => (
+									<li key={index}>
+										{elem}
+									</li>
+								))}
 							</ul>
 						</div>
 						<h3 className={style['name-of-job']}>Education and Training</h3>
 						<div className={style['works-block-description']}>
-							<p>2020 - Kharkiv National Automobile and Highway University Degree.</p>
-							<p>2019 – Currently undertaking an online Front End Development Programme with A-Level Ukraine</p>
-							<p>2013 - Vovchansk Gymnasium Ukraine No.1 General Secondary Level of Education.</p>
+							{education.map((elem, index) => (
+								<p key={index}>
+									{elem}
+								</p>
+							))}
 						</div>
 						<h3 className={style['name-of-job']}>Hobbies and Interests</h3>
 						<div className={style['works-block-description']}>
-							<p>Fishing, Learning English (improving communication skills), kickboxing, hiking, football, volleyball.</p>
+							<p>{hobbi}</p>
 						</div>
 					</div>
 				</div>

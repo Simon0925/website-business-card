@@ -22,7 +22,7 @@
 
         .portfolio-container {
             box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
-            background-image: url('../../public/404.png');
+            
             background-size: contain;
             background-repeat: no-repeat;
             overflow:hidden;
@@ -30,8 +30,8 @@
             flex-direction: column-reverse;
             width: 500px;
             height: 415.7px;
-            background-color: red;
             transition: all 1s;
+          
             .portfolio-ditails{
                 position: relative;
                 top: 127px;

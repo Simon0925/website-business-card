@@ -5,8 +5,36 @@ import {WrapForScroll} from '../WrapForScroll/WrapForScroll';
 import Progress from '../../UI/Progress/Progress';
 import { ListSkill } from '../ListSkill/ListSkill';
 import {DownloadCv} from '../DownloadCv/DownloadCv';
+import { useEffect, useState } from 'react';
+import Spiner from '../../UI/Spiner/spiner';
+
+interface ProgressDataInterface{
+	name:string;
+	percent:number;
+	id:string
+}
  
 export function ScrollBar ()  {
+	const [progressData, setProgressData] = useState<ProgressDataInterface[]>([]);
+	const [isLoading, setIsLoading] = useState(false);
+
+	async function getProgressData () {
+		try{
+			setIsLoading(false);
+			const response = await fetch('http://localhost:5045/api/programSkills');
+			const data = await response.json();
+			console.log();
+			setProgressData(data[0]);
+			setIsLoading(true);
+		}catch(error){
+			console.log(error);
+		}
+	}
+
+	useEffect(()=>{
+		getProgressData();
+	},[]);
+
 	return (
 		<div className={styles['scroll-bar']} >
 			<WrapForScroll>
@@ -15,14 +43,14 @@ export function ScrollBar ()  {
 			<WrapForScroll>
 				<ProgressSkill />
 			</WrapForScroll>
-			
 			<WrapForScroll>
-				<Progress text='HTML' percent={90} />
-				<Progress text='CSS' percent={90} />
-				<Progress text='JS' percent={70} />
-				<Progress text='React JS' percent={80} />
-				<Progress text='TypeSript' percent={50} />
-				<Progress text='Node JS' percent={30} />
+				{isLoading &&
+    			progressData.map((elem,index) => (
+    				<div key={index} style={{ width: '100%' }}>
+    					<Progress text={elem.name} percent={elem.percent} />
+    				</div>
+    			))}
+				{!isLoading && <Spiner />}
 			</WrapForScroll>
 			<WrapForScroll>
 				<ListSkill />

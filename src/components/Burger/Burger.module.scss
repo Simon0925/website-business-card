@@ -34,12 +34,12 @@
     transform: rotate(45deg);
     position: absolute;
     margin-right: 20px;
-    transition: all 1s;
+    transition: all 0.5s;
 
 
 }
 .burger-line3{
-    transition: all 1s;
+    transition: all 0.5s;
 
     width: 35px;
     height: 4.4px;
@@ -51,7 +51,7 @@
 
 }
 .burger-line4{
-    transition: all 1s;
+    transition: all 0.5s;
     display: none;   
 }
 

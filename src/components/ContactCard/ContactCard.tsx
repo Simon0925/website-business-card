@@ -1,8 +1,14 @@
 import styles from './ContactCard.module.scss';
 
 import { useState, useEffect } from 'react';
+import ContactTable from './ContactTable/ContactTable';
+import Spiner from '../../UI/Spiner/spiner';
+import ErrorMassage from '../ErrorMessage/ErrorMessage';
 
 export default function ContactCard (){
+
+	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [error, setError] = useState<string | undefined>();
 
 	const [data, setData] = useState({
 		country:'',
@@ -16,7 +22,9 @@ export default function ContactCard (){
 	useEffect(()=>{
 		async function getData() {
 			try{
-				const response = await fetch('http://localhost:5038/api/website-buiness-card/contact-data-cards');
+				setIsLoading(true);
+
+				const response = await fetch('http://localhost:5045/api/contact-data-cards');
       			const data = await response.json();
 				const result = data[0];
 				setData({
@@ -27,55 +35,40 @@ export default function ContactCard (){
 					telegram:result.telegram,
 					personal:result.personal
 				});
+				setIsLoading(false);
+
 			}catch(error){
-				console.log(error);
+
+				setIsLoading(false);
+				setError(String(error));
 			}
 		}
 		getData();
 	},[]);
 
 	return<>
-		<div className={styles['contact-card-wrap']} >
+		{error &&<ErrorMassage /> }
+
+		{!isLoading && <div className={styles['contact-card-wrap']} >
 			<div className={styles['contact-card']}>
-				<div className={styles['contact-table']}>
-                    
-					<ul>
-						<li>
-							<span>Country:</span>
-							<p>{data.country}</p>
-						</li>
-						<li>
-							<span>Coremonial county:</span>
-							<p>{data.coremonialCounty}</p>
-						</li>
-						<li>
-							<span>City:</span>
-							<p>{data.city}</p>
-						</li>
-					</ul>
-                    
-				</div>
+				<ContactTable title1={'Country:'}
+				 dataTitle1={data.country} 
+				 title2={'Coremonial county:'} 
+				 dataTitle2={data.coremonialCounty} 
+				 title3={'City:'} 
+				 dataTitle3={data.city} />
 			</div>
 			<div className={styles['contact-card']}>
-				<div className={styles['contact-table']}>
-                    
-					<ul>
-						<li>
-							<span>Email:</span>
-							<a href={data.email} >{data.email}</a>
-						</li>
-						<li>
-							<span>Telegram:</span>
-							<a href='@arter'>{data.telegram}</a>
-						</li>
-						<li>
-							<span>Personal:</span>
-							<a href={data.personal}>{data.personal}</a>
-						</li>
-					</ul>
-                    
-				</div>
+				<ContactTable title1={'Email:'}
+				 dataTitle1={data.email} 
+				 title2={'Telegram:'} 
+				 dataTitle2={data.telegram} 
+				 title3={'Personal:'} 
+				 dataTitle3={data.personal} />
 			</div>
-		</div>	
+		</div>}
+		
+		{isLoading && <Spiner />}
+
 	</>;
 }

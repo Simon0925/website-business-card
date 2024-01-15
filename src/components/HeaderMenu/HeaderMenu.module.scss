@@ -1,6 +1,6 @@
 .header-menu-wrap{
     position: absolute;
-    width: 100%;
+    width: calc(100vw - 4vw);
     top: 0;
     left: 0;
     height: 70px;
@@ -27,11 +27,9 @@
 @media only screen and (max-width:1200px){
     .header-menu-wrap{
         display: block;
+
     }
     .header-menu-dote{
-        margin-top: 23px;
-        position: absolute;
-        margin-left: 53px;
+        position: absolute; 
     }
 }
-

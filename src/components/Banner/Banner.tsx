@@ -2,6 +2,7 @@ import Button from '../../UI/Button/Button';
 import WordPrint from '../../UI/WordPrint/WordPrint';
 import styles from './Banner.module.scss';
 
+
 export default function Bunner (){
 	return<>
 		<div className={styles['baner-wrap']}>
@@ -12,7 +13,7 @@ export default function Bunner (){
 				</div>
 				<WordPrint />
 				<span className={styles['btn']}>
-					<Button children={'EXPLORE NOW'} />
+					<a href='http://localhost:5173/portfolio'><Button children={'EXPLORE NOW'} /></a>
 				</span>
 			</div>
 		</div>

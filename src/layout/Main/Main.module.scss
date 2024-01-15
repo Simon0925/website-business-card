@@ -1,36 +1,69 @@
-main{
-  width: 77dvw;
+main {
+  width: 78vw;
   height: calc(100vh - 14.7vh);
-  top:111px;
-  position: relative;
+  top: 110px;
+  position: absolute;
+  right: 1em;
   overflow: scroll;
   overflow-x: hidden;
-  }
-  
-  main::-webkit-scrollbar{
-    width: 0;
-  }
-  @media only screen and (max-width:1200px){
-    .main{  
-      width: 98dvw;
-    }
-  }
-  @media only screen and (max-width:540px){
-    main{  
-      top:90px;
-    }
-  }
-  @media only screen and (max-width:375px){
-    main{  
-      top:80px;
-    }
-  }
+}
+
+main::-webkit-scrollbar {
+  width: 0;
+}
 
 
+@media only screen and (max-width: 1200px) {
+  main {  
+    width: calc(100vw - 4vw);
+    left: 0;
+    top: 5em;
+    height: calc(100vh - 14vh);
+    // height: 52em;
 
+  }
+}
+@media only screen and (max-height: 1024px) and (max-width: 768px) {
+  main {  
+    height: calc(100vh - 10vh);
+  }
+}
+@media only screen and (max-height: 932px) and (max-width: 430px) {
+  main {  
+    height: calc(100vh - 13vh);
+  }
+}
+@media only screen and (max-height: 915px) and (max-width: 412px) {
+  main {  
+    height: calc(100vh - 11vh);
+  }
+}
+@media only screen and (max-height: 720px) and (max-width: 540px) {
+  main {  
+    height: calc(100vh - 14vh);
+  }
+}
+@media only screen and (max-height: 360px) and (max-width: 740px) {
+  main {  
+    height: calc(100vh - 10vh);
+  }
+}
+@media only screen and (max-height: 260px) and (max-width: 653px) {
+  main {  
+    height: calc(100vh - 10vh);
+  }
+}
+@media only screen and (max-height: 600px) {
+  main {  
+    width: calc(100vw - 4vw);
+    left: 0;
+    top: 5em;
+    height: calc(100vh - 24vh);
+  }
+}
 
-.open{
-  width: 100dvw; 
+.open {
+  width: 100vw; 
   height: 91%;
   z-index: 2; 
   position: fixed;
@@ -38,7 +71,6 @@ main{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  transition: right .5s, left .5s;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: right 0.5s, left 0.5s;
 }
-

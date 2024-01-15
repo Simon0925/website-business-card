@@ -10,17 +10,75 @@
     height: 100%;
     background-color:rgba(0,0,0, 0.5);
     z-index: 1500;
+   
     overflow: hidden;
     cursor: default;
 
-
+    .close-btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
     &__photo {
+        top: 50%;
         left: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
+        transform: translate(-50%, -50%);
         cursor: pointer !important;
-        border-radius: 10px; 
+        border-radius: 10px;
         max-height: 70%;
+        max-width: 90%; 
         position: absolute;
     }
 }
+@media screen and (max-width: 1042px) {
+    .modal-content .close-btn {
+        right: 10vh;
+        top: 25vh;
+    }
+}
+@media screen and (max-width: 820px) {
+    .modal-content .close-btn {
+        right: 6vh;
+        top: 20vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .modal-content .close-btn {
+        right: 3vh;
+        top: 10vh;
+    }
+}
+@media screen and (max-width: 540px) {
+    .modal-content .close-btn {
+        right: 3vh;
+        top: 6vh;
+    }
+}
+@media screen and (max-width: 430px) {
+    .modal-content .close-btn {
+        right: 2vh;
+        top: 20vh;
+    }
+}
+@media screen and (max-width: 375px) {
+    .modal-content .close-btn {
+        right: 2vh;
+        top: 15vh;
+    }
+}
+@media screen and (max-width: 280px) {
+    .modal-content .close-btn {
+        right: 0vh;
+        top: 20vh;
+    }
+
+}
+
+
+
+
+
+
+
+

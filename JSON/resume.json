@@ -1,0 +1,141 @@
+{
+    "resume": {
+      "leftSide": {
+        "aboutMe": {
+          "title": "ABOUT ME",
+          "text": "I'm looking for a job where I can apply the acquired knowledge and practical experience on large and interesting projects, and also continue to learn and develop myself. Currently, I have experience implementing complex web applications and internal frameworks using React, Node JS."
+        },
+        "hardSkills": {
+          "title": "HARD SKILLS",
+          "skills": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Redux / Redux - Saga",
+            "Next.js",
+            "Styled components",
+            "HTML5",
+            "CSS3 / SASS",
+            "WebPack / Gulp",
+            "GIT",
+            "Node.js",
+            "Figma"
+          ]
+        },
+        "softSkills": {
+          "title": "SOFT SKILLS",
+          "skills": [
+            "Communication",
+            "Critical thinking",
+            "Adaptability",
+            "Collaboration",
+            "Emotional intelligence"
+          ]
+        },
+        "languages": {
+          "title": "LANGUAGES",
+          "languagesData":[
+            {"language": "English: Intermediate"},
+            {"language": "Ukrainian: Native"},
+            {"language": "Russian: Mastery"}
+        ]
+        }
+      },
+      "rightSide": {
+        "headerData": {
+          "name": "Semen",
+          "surname": "Yakovenko",
+          "speciality": "FRONT-END DEVELOPER",
+          "contactData":[
+            {
+                "element": "+78 (077) 114 26 53",
+                 "link": "+780771142653",
+                "imgSrc":"../../public/telephone.png",
+                "alt":"telephone"
+            },
+            {
+                "element": "sam0925g@gmail.com",
+                "link": "sam0925g@gmail.com",
+                "imgSrc":"../../public/gmail.svg",
+                "alt":"gmail"
+            },
+            {
+                "element": "@the_bear0_0",
+                "link": "@the_bear0_0",
+                "imgSrc":"../../public/telegram.svg",
+                "alt":"Telegram"
+            },
+            {
+                "element": "semen-yakovenko",
+                "link": "https://www.linkedin.com/in/semen-yakovenko-585941186",
+                "imgSrc":"../../public/linkedin.png",
+                "alt":"Linkedin"
+            },
+            {
+                "element": "Simon092",
+                "link": "https://github.com/Simon0925",
+                "imgSrc":"../../public/git.png",
+                "alt":"Git"
+            }
+          ]  
+        },
+        "workExperiences": [
+          {
+            "title": "2022 to 2023 - Freelancing via Young Ones Amsterdam:",
+            "roles": [
+              {
+                "role": "Bartender - Panama Club, Amsterdam",
+                "p":"Maintaining high standards of service and health & safety and helping to deliver the best service to customers.",
+                "responsibilities": [
+                  "All aspects of customer service.",
+                  "Mixing drinks, taking orders and ensuring customers are served quickly.",
+                  "Running the bar in line with health, safety and legal regulations."
+                ]
+              },
+              {
+                "role": "Waiter – DeVerbroederlJ / Cafe Restaurant Stork, Amsterdam",
+                "responsibilities": [
+                  "Greeting customers on arrival and taking food and drink orders",
+                  "Swiftly resolving any conflicts or issues",
+                  "Working as part of a team",
+                  "Handling hot food and serving to the customers"
+                ]
+              },
+              {
+                "role": "Store Consultant - G-Star Store"
+              }
+            ]
+          },
+          {
+            "title": "2021 to 2022 - Freight Broker at Land Star Ukraine",
+            "responsibilities": [
+              "Managing freight bookings using a computerised system.",
+              "Checking that tax and customs documents are correct and completed in full",
+              "Working with national and international suppliers and agents.",
+              "Arranging freight deliveries and collections between ports, airports, and warehouses.",
+              "Handling invoices and payments.",
+              "Keeping clients up to date and dealing with problems or delays."
+            ]
+          },
+          {
+            "title": "2020 to 2021 - Digital Marketing - Ukraine",
+            "p":"Taking a lead in maintaining and developing a site.",
+            "responsibilities": [
+              "Attending meetings with clients to plan and develop website styles and appearance.",
+              "Using content management systems (CMS).",
+              "Analysing statistics about who is using the website and writing reports for managers and clients",
+              "Reporting technical problems to IT support staff as needed"
+            ]
+          }
+        ],
+        "educationAndTraining": [
+          "2020 - Kharkiv National Automobile and Highway University Degree.",
+          "2019 – Currently undertaking an online Front End Development Programme with A-Level Ukraine",
+          "2013 - Vovchansk Gymnasium Ukraine No.1 General Secondary Level of Education."
+        ],
+        "hobbiesAndInterests": "Fishing, Learning English (improving communication skills), kickboxing, hiking, football, volleyball."
+      }
+    }
+    
+  }
+  

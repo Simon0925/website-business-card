@@ -1,5 +1,6 @@
 .header-wrap{
-    width: 77dvw;
+    width: 78dvw;
+    right: 1em;
     position: absolute;
     height: 100px;
     background: #F4F4F6;
@@ -14,14 +15,15 @@
         right: -250px;
         top:11px;
         position: fixed;
-        transition: all 1s;
+        transition: all 0.5s;
         z-index: 9999;
     }
     .header-wrap2 {
         flex-flow: column nowrap;
         height: 100%;
         width:20dvw;
-        right: -1px;
+        width: calc(100vh - 77vh);
+        right: 0;
         top:11px;
         position: fixed;
         z-index: 999;
@@ -33,67 +35,4 @@
     top: -21px;
     background-color: #FFFFFF;
 }
-}
-
-@media only screen and (max-width:1000px){
-    .header-wrap{
-        right: -200px;
-    }
-    .header-wrap2{
-        width: 22%;
-
-    }
-}
-
-@media only screen and (max-width:912px){
-    .header-wrap{
-        right: -184px;
-    }
-    .header-wrap2{
-        width: 22%;
-        right: 0;
-    }
-    
-}
-
-@media only screen and (max-width:800px){
-    .header-wrap2{
-        width: 24%;
-    }
-}
-@media only screen and (max-width:768px){
-    .header-wrap{
-        right: -154px;
-    }
-    .header-wrap2{
-        right: 0px;
-    }
-}
-@media only screen and (max-width:700px){
-    .header-wrap2{
-        width: 28%;
-    }
-}
-@media only screen and (max-width:600px){
-    .header-wrap2{
-        width: 36%;
-    }
-}
-
-@media only screen and (max-width:500px){
-    .header-wrap2{
-        width: 40%;
-    }
-}
-
-@media only screen and (max-width:400px){
-    .header-wrap2{
-        width: 48%;
-    }
-}
-
-@media only screen and (max-width:300px){
-    .header-wrap2{
-        width: 54%;
-    }
 }

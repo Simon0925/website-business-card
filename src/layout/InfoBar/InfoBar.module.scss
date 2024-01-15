@@ -2,6 +2,7 @@
 
 .info-bar-wrap {
     overflow: hidden;
+
     min-width: 18dvw;
     min-height: calc(100vh - 3vh);
     height: auto;
@@ -12,80 +13,35 @@
     margin-right: auto;
     top: 10px;
     bottom: 10px;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 
 .open{
-    transition: all 1s;
+    transition: all 0.5s;
     margin-left: -1%; 
     top:0;
     width: 18em;
-    height: 100%; 
+    min-height: 100%; 
 }
 
 @media only screen and (max-width:1200px){
     .info-bar-wrap{
-        margin-left: -250px;
-        height: 100%; 
+        min-height: 100vh;
+        margin-left: -254px;
+        top:10px;
     }
     .open{
-        margin-left: -1%;
-    }
-}
+        top:10px;
+        margin-left: -1em;
 
-@media only screen and (max-width:932px){
+        
+    }
+}
+@media only screen and (max-height:912px){
     .info-bar-wrap{
-        margin-left: -74%;
-        top: 0;
+       
+        top:0.6em;
     }
-    .open{
-        margin-left: -2%;
-    }
-}
-   
-
-@media only screen and (max-width:800px){
-    .open{
-        margin-left: -2%;
-    }
-}
-@media only screen and (max-height:667px){
-    .info-bar-wrap{
-        margin-left: -60%;
-        top:0
-    }
-    .open{
-        margin-left: -3%;
-    }
-   
-}
-@media only screen and (max-width:430px){
-    .open{
-        margin-left: -3%;
-    }
-}
-
-@media only screen and (max-width:375px){
-    .info-bar-wrap{
-        margin-left: -62%;
-    }
-    .open{
-        margin-left: -3%;
-    }
-}
-@media only screen and (max-width:370px){
-    .open{
-        margin-left: -3%;
-    }
-}
-
-@media only screen and (max-width:280px){
-    .info-bar-wrap{
-        margin-left: -83%;
-        top: 0;
-    }
-    .open{
-        margin-left: -8%;
-    }
+    
 }

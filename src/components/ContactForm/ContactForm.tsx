@@ -74,7 +74,7 @@ export default function ContactForm(){
                          
 						htmlFor="nameInput">
 							<span>
-								<UserSVG isSelected={isActive.name} />
+								<UserSVG  isSelected={isActive.name} isValid={isValid.name} />
 							</span>
 						</label>
 						<input 
@@ -91,7 +91,7 @@ export default function ContactForm(){
 					<div className={styles['form-group']}>
 						<label 
 							className={`${styles['label-not-activ']} ${isActive.email ? styles['label-activ'] : ''}
-                        ${!isValid.email ? styles['label-error'] : ''}`}
+                        ${!isValid.email ? styles['label-error'] : ''}`}	
 							htmlFor="emailInput">
 							<span
 								className={`${styles['labe-iconl-not-activ']}
@@ -118,7 +118,7 @@ export default function ContactForm(){
                                  ${!isValid.message ? styles['label-error'] : ''}`}
 							htmlFor="messageInput">
 							<span>
-								<LetterSVG isSelected={isActive.text} />
+								<LetterSVG isSelected={isActive.text} isValid={isValid.message } />
 							</span>
 
 

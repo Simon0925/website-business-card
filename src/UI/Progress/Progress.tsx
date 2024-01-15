@@ -5,6 +5,7 @@ import  { useEffect, useState } from 'react';
 interface ProgressProps {
 	text: string,
 	percent: number,
+	
 }
 
 export default function Progress ({
@@ -28,7 +29,7 @@ export default function Progress ({
 
 	return(
 		<>
-			<div className={styles['skills-bar-wrap']}>
+			<div  className={styles['skills-bar-wrap']}>
 				<div className={styles['label-content']}>
 					<label>{text}</label>
 					<span>{currentValue + '%'}</span>

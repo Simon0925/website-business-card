@@ -1,4 +1,5 @@
 
+import React from 'react';
 import styles from './Burger.module.scss';
 
 
@@ -11,7 +12,7 @@ interface BurgerProps {
 }
 
 
-export default function Burger({rotated,handleClick}:BurgerProps) {
+const  Burger = React.memo(({ rotated, handleClick }: BurgerProps) => {
 	
 	
 	
@@ -27,4 +28,6 @@ export default function Burger({rotated,handleClick}:BurgerProps) {
 			</div>
 		</>
 	);
-}
+});
+
+export default Burger;

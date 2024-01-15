@@ -1,32 +1,41 @@
+import CloseSVG from '../../SVG/CloseSVG/CloseSVG';
 import styles from './ModalWindow.module.scss';
-import { useState } from 'react';
+import {  useState } from 'react';
 
 
 interface ModalWindowProps {
-	clouseModal: React.Dispatch<React.SetStateAction<boolean>>,
-    photo:string
+	closeModal: React.Dispatch<React.SetStateAction<boolean>>,
+    photo:string | undefined
 }
 
 export default function ModalWindow({
-	clouseModal,
+	closeModal,
 	photo
 }:ModalWindowProps){
 	var [imgHovered, setImgHovered] = useState(false);
 
+	const [isHovered, setIsHovered] = useState(false);
+	
 	return <>
 		<div
+			
 			className={styles['modal-content']}
 			onClick={() => {
 				if (!imgHovered)
-					clouseModal(false);
+					closeModal(false);
 			}}
-			
-			
 		>
+			<span 
+				className={styles['close-btn']}
+				onMouseEnter={() => setIsHovered(true)}
+				onMouseLeave={() => setIsHovered(false)}
+			><CloseSVG isHovered={isHovered}   /></span>
+			
+		
 			<img
 				onClick={() => {
 					
-					clouseModal(true);
+					closeModal(true);
 				}}
 				onMouseEnter={() => setImgHovered(true)}
 				onMouseLeave={() => setImgHovered(false)}
@@ -35,6 +44,8 @@ export default function ModalWindow({
 				src={photo}
 				alt="photo"
 			/>
+			
 		</div>
 	</>;
+	
 }
