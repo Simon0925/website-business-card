@@ -4,6 +4,7 @@ import style from './Resume.module.scss';
 import resumeData from './interface';
 import ErrorMassage from '../../components/ErrorMessage/ErrorMessage';
 import Spiner from '../../UI/Spiner/spiner';
+import HOST from '../../../configHost';
 
 
 export function Resume() {
@@ -53,7 +54,7 @@ export function Resume() {
 	async function getData() {
 		try {
 			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/resume');
+			const response = await fetch(`${HOST}:5045/api/resume`);
 			const result = await response.json();
 			const data = result.resumeData[0];
 			setData(data);

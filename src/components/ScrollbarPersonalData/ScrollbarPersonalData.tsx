@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './ScrollbarPersonalData.module.scss';
 import Spiner from '../../UI/Spiner/spiner';
+import HOST from '../../../configHost';
 
 interface ScrollBarPersonalDataInterface{
 	residence:string;
@@ -17,7 +18,7 @@ export function ScrollBarPersonalData ()  {
 	async function getData() {
 		try{
 			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/scroll-personal-data');
+			const response = await fetch(`${HOST}:5045/api/scroll-personal-data`);
 			const data = await response.json();
 			setData(data[0]);
 			setIsLoading(false);

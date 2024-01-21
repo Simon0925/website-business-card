@@ -3,6 +3,7 @@ import Footer from '../../layout/Footer/Footer';
 import style from './Portfolio.module.scss';
 import Spiner from '../../UI/Spiner/spiner';
 import ErrorMassage from '../../components/ErrorMessage/ErrorMessage';
+import HOST from '../../../configHost';
 
 interface PortfolioInterface {
   h5: string;
@@ -20,7 +21,7 @@ export function Portfolio() {
 	async function getData() {
 		try {
 			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/portfolio');
+			const response = await fetch(`${HOST}:5045/api/portfolio`);
 			const data = await response.json();
 			setData(data);
 			setIsLoading(false);

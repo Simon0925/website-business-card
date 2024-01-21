@@ -7,6 +7,7 @@ import { ListSkill } from '../ListSkill/ListSkill';
 import {DownloadCv} from '../DownloadCv/DownloadCv';
 import { useEffect, useState } from 'react';
 import Spiner from '../../UI/Spiner/spiner';
+import HOST from '../../../configHost';
 
 interface ProgressDataInterface{
 	name:string;
@@ -21,7 +22,7 @@ export function ScrollBar ()  {
 	async function getProgressData () {
 		try{
 			setIsLoading(false);
-			const response = await fetch('http://localhost:5045/api/programSkills');
+			const response = await fetch(`${HOST}:5045/api/programSkills`);
 			const data = await response.json();
 			console.log();
 			setProgressData(data[0]);

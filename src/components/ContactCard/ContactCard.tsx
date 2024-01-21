@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import ContactTable from './ContactTable/ContactTable';
 import Spiner from '../../UI/Spiner/spiner';
 import ErrorMassage from '../ErrorMessage/ErrorMessage';
+import HOST from '../../../configHost';
 
 export default function ContactCard (){
 
@@ -23,8 +24,8 @@ export default function ContactCard (){
 		async function getData() {
 			try{
 				setIsLoading(true);
-
-				const response = await fetch('http://localhost:5045/api/contact-data-cards');
+				
+				const response = await fetch(`${HOST}:5045/api/contact-data-cards`);
       			const data = await response.json();
 				const result = data[0];
 				setData({

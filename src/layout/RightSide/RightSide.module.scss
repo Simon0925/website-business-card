@@ -5,7 +5,7 @@
     width: calc(100dvw - 20dvw);
 
     position: fixed;
-    right: 0px;
+    right: -0.25em;
     top: 10px;
     bottom: 10px;
     overflow-x: hidden;
@@ -16,6 +16,7 @@
 @media only screen and (max-width:1200px){
     .right-side-wrap{
         width: calc(100dvw - 2dvw);
+        right: 0;
 
     }
 }

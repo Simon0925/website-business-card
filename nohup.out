@@ -1,0 +1,1341 @@
+
+> website-buiness-card@0.0.0 dev
+> vite --host 0.0.0.0 --port 80
+
+error when starting dev server:
+Error: listen EACCES: permission denied 0.0.0.0:80
+    at Server.setupListenHandle [as _listen2] (node:net:1800:21)
+    at listenInCluster (node:net:1865:12)
+    at doListen (node:net:2014:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+> website-buiness-card@0.0.0 dev
+> vite --host 0.0.0.0 --port 80
+
+
+  VITE v5.0.7  ready in 308 ms
+
+  ➜  Local:   http://localhost:80/
+  ➜  Network: http://172.31.19.55:80/
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+3:24:21 PM [vite] hmr update /src/components/Banner/Banner.tsx
+3:24:21 PM [vite] Internal server error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/home/ubuntu/website-business-card/src/components/Banner/Banner.tsx[0m:4:1]
+ [2m 4[0m | 
+ [2m 5[0m | 
+ [2m 6[0m | export default function Bunner (){
+ [2m 7[0m | 	return<>
+    : [31;1m        ^[0m
+ [2m 8[0m | 		<div className={styles['baner-wrap']}>
+ [2m 9[0m | 			<div className={styles['baner-content-wrap']}>
+ [2m10[0m | 				<div className={styles['baner-text-content']} >
+    `----
+
+  [31mx[0m JSX value should be either an expression or a quoted JSX text
+    ,-[[36;1;4m/home/ubuntu/website-business-card/src/components/Banner/Banner.tsx[0m:13:1]
+ [2m13[0m | 				</div>
+ [2m14[0m | 				<WordPrint />
+ [2m15[0m | 				<span className={styles['btn']}>
+ [2m16[0m | 					<a href=`${HOST}:80/portfolio`><Button children={'EXPLORE NOW'} /></a>
+    : [31;1m             ^[0m
+ [2m17[0m | 				</span>
+ [2m18[0m | 			</div>
+ [2m19[0m | 		</div>
+    `----
+
+
+Caused by:
+    Syntax Error
+  Plugin: vite:react-swc
+  File: /home/ubuntu/website-business-card/src/components/Banner/Banner.tsx
+  
+3:24:45 PM [vite] hmr update /src/components/Banner/Banner.tsx
+3:24:56 PM [vite] hmr update /src/components/Banner/Banner.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+3:27:43 PM [vite] hmr update /src/components/History/History.tsx
+3:28:11 PM [vite] hmr update /src/components/History/History.tsx
+3:28:17 PM [vite] hmr update /src/components/History/History.tsx
+3:29:34 PM [vite] hmr update /src/components/History/History.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+3:37:28 PM [vite] hmr update /src/components/ListSkill/ListSkill.tsx
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:38:05 PM [vite] hmr update /src/components/ProgressSkill/ProgressSkill.tsx
+3:39:16 PM [vite] hmr update /src/components/ContactCard/ContactCard.tsx
+3:40:47 PM [vite] hmr update /src/components/ContactForm/ContactForm.tsx
+3:40:52 PM [vite] hmr update /src/components/ContactForm/ContactForm.tsx
+3:41:09 PM [vite] hmr update /src/components/ContactForm/ContactForm.tsx
+3:41:50 PM [vite] hmr update /src/components/DownloadCv/DownloadCv.tsx
+3:42:07 PM [vite] hmr update /src/components/ContactForm/ContactForm.tsx
+3:43:54 PM [vite] hmr update /src/pages/Resume/Resume.tsx
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+3:44:23 PM [vite] hmr update /src/pages/Services/Services.tsx
+3:44:26 PM [vite] hmr update /src/pages/Services/Services.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+3:45:27 PM [vite] hmr update /src/pages/Portfolio/Portfolio.tsx
+3:45:31 PM [vite] hmr update /src/pages/Portfolio/Portfolio.tsx
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+3:46:28 PM [vite] hmr update /src/components/ScrollbarPersonalData/ScrollbarPersonalData.tsx
+3:46:32 PM [vite] hmr update /src/components/ScrollbarPersonalData/ScrollbarPersonalData.tsx
+3:48:09 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+3:48:59 PM [vite] hmr update /src/components/ContactForm/ContactForm.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:49:59 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:50:09 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:50:19 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+3:50:31 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:50:38 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:51:18 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+3:51:24 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+3:51:29 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+3:52:48 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+3:58:12 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+3:59:24 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+3:59:46 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+4:00:00 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+4:00:09 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+4:00:19 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+4:00:36 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+4:01:09 PM [vite] hmr update /src/components/ScrollBar/ScrollBar.tsx
+4:02:32 PM [vite] hmr update /src/layout/Header/Header.tsx
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+11:05:28 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+11:06:39 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+11:07:05 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+11:07:18 PM [vite] hmr update /src/layout/RightSide/RightSide.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+11:09:32 PM [vite] hmr update /src/components/ModalWindow/ModalWindow.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+11:09:49 PM [vite] hmr update /src/components/ModalWindow/ModalWindow.tsx
+11:09:59 PM [vite] hmr update /src/components/ModalWindow/ModalWindow.tsx
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+11:23:25 PM [vite] hmr update /src/layout/Main/Main.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+11:26:32 PM [vite] hmr update /src/pages/Resume/Resume.tsx
+11:26:56 PM [vite] hmr update /src/pages/Resume/Resume.tsx
+11:27:04 PM [vite] hmr update /src/pages/Resume/Resume.tsx
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+(node:2086) Warning: An error event has already been emitted on the socket. Please use the destroy method on the socket while handling a 'clientError' event.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/telephone.png, use /telephone.png.
+Files in the public directory are served at the root path.
+Instead of /public/gmail.svg, use /gmail.svg.
+Files in the public directory are served at the root path.
+Instead of /public/telegram.svg, use /telegram.svg.
+Files in the public directory are served at the root path.
+Instead of /public/git.png, use /git.png.
+Files in the public directory are served at the root path.
+Instead of /public/linkedin.png, use /linkedin.png.
+Files in the public directory are served at the root path.
+Instead of /public/404.png, use /404.png.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/avatar/avatr.jpg, use /avatar/avatr.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/banner.jpeg, use /banner.jpeg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/square.svg, use /square.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/dots.png, use /dots.png.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.
+Files in the public directory are served at the root path.
+Instead of /public/check/check.svg, use /check/check.svg.

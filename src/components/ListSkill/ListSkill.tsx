@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './ListSkill.module.scss';
 import Spiner from '../../UI/Spiner/spiner';
-
+import HOST from '../../../configHost'
 interface listSkillInterface {
 	name:string
 }
@@ -15,8 +15,8 @@ export function ListSkill () {
 
 	async function getDaat() {
 		try{
-			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/listSkill');
+			setIsLoading(true);				
+			const response = await fetch(`${HOST}:5045/api/listSkill`);
 			const data = await response.json();
 			setData(data[0]);
 			setIsLoading(false);

@@ -1,3 +1,6 @@
+import HOST from "../../../configHost";
+
+
 export default async function handleSubmit(
 	e: React.FormEvent,
 	formState: { isValid: { name: boolean; email: boolean; message: boolean } },
@@ -29,8 +32,8 @@ export default async function handleSubmit(
     
 	if (formState.isValid.name && formState.isValid.email && formState.isValid.message){
 		try {
-			const response = await fetch(
-				'http://localhost:5045/api/website-buiness-card/contact-massage',
+			const response = await fetch(  
+				`${HOST}:5045/api/website-buiness-card/contact-massage`,
 				{
 					method: 'POST',
 					headers: {

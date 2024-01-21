@@ -2,6 +2,7 @@ import styles from './ProgressSkill.module.scss';
 import {CirclePercent} from '../../UI/CirclePercent/CirclePercent';
 import { useEffect, useState } from 'react';
 import Spiner from '../../UI/Spiner/spiner';
+import HOST from '../../../configHost';
 
 interface progressData{
 	name:string;
@@ -20,7 +21,7 @@ export function ProgressSkill(){
 	async function getData() {
 		try{
 			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/progress');
+			const response = await fetch(`${HOST}:5045/api/progress`);
 			const data = await response.json();
 			setDataProgress(data);
 			setIsLoading(false);

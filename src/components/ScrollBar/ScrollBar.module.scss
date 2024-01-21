@@ -1,6 +1,6 @@
 
 .scroll-bar{
-    height: calc(100vh - 34vh);
+    height: calc(100vh - 35vh);
     min-height: auto;
     background-color: #F4F4F6;
     overflow: scroll;
@@ -26,6 +26,8 @@
 @media screen and (max-width: 390px) {
     .scroll-bar {
         height: 67.5vh;
+        height: calc(100vh - 41.5vh);//// sfter test on phone
+
     }
 }
 

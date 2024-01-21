@@ -1,3 +1,4 @@
+import HOST from '../../../configHost';
 import DownloadSVG from '../../SVG/DownloadSVG/DownloadSVG';
 import styles from './DownloadCv.module.scss';
 import { useState } from 'react';
@@ -7,7 +8,7 @@ export function DownloadCv () {
 	const [isHovered, setIsHovered] = useState(false);
 	async function handleDownload(){
 		try{
-			const response  = await fetch('http://localhost:5045/download/CV-Yakovenko-Semen.docx');
+			const response  = await fetch(`${HOST}:5045/download/CV-Yakovenko-Semen.docx`);
 			if (response.ok) {
 		
 				const blob = await response.blob();

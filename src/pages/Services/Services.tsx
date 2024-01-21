@@ -3,6 +3,7 @@ import Footer from '../../layout/Footer/Footer';
 import styles from './Services.module.scss';
 import ErrorMassage from '../../components/ErrorMessage/ErrorMessage';
 import Spiner from '../../UI/Spiner/spiner';
+import HOST from '../../../configHost';
 
 
 interface serviceInterface{
@@ -21,7 +22,7 @@ export default function Services() {
 	async function getData(){
 		try{
 			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/services');
+			const response = await fetch(`${HOST}:5045/api/services`);
 			const data = await response.json();
 			console.log(data);
 			setData(data);

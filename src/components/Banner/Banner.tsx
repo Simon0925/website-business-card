@@ -13,7 +13,7 @@ export default function Bunner (){
 				</div>
 				<WordPrint />
 				<span className={styles['btn']}>
-					<a href='http://localhost:5173/portfolio'><Button children={'EXPLORE NOW'} /></a>
+					<a href='http://3.70.168.39/portfolio'><Button children={'EXPLORE NOW'} /></a>
 				</span>
 			</div>
 		</div>

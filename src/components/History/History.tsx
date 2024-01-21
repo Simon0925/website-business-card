@@ -6,6 +6,7 @@ import Spiner from '../../UI/Spiner/spiner';
 import ErrorMassage from '../ErrorMessage/ErrorMessage';
 import ModalWindow from '../ModalWindow/ModalWindow';
 import ReactDOM from 'react-dom';
+import HOST from '../../../configHost'
 
  interface CVData {
 	_id: string;
@@ -32,8 +33,8 @@ export default function History() {
 
 	const workData = async function (): Promise<void> {
 		try {
-			setIsLoading(true);
-			const response = await fetch('http://localhost:5045/api/home-page');
+			setIsLoading(true);						
+			const response = await fetch(`${HOST}:5045/api/home-page`);
 			const res = await response.json();
 			setDataWork(res.workHistory);
 			setIsLoading(false);
@@ -52,7 +53,7 @@ export default function History() {
 
 	const educationData = async function (): Promise<void> {
 		try {
-			const response = await fetch('http://localhost:5045/api/home-page');
+			const response = await fetch(`${HOST}:5045/api/home-page`);
 			const res = await response.json();
 			setDataEducation(res.Education);
 		} catch (error) {
